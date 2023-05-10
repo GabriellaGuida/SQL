@@ -1,0 +1,21 @@
+CREATE TABLE breathe_and_be_you (id INTEGER PRIMARY KEY, item TEXT, color TEXT, stock INTEGER, price INTEGER);
+INSERT INTO breathe_and_be_you VALUES (1, "t-shirt", "hot pink", 30, 10.00);
+INSERT INTO breathe_and_be_you VALUES (2, "skirt", "white", 27, 20.00);
+INSERT INTO breathe_and_be_you VALUES (3, "pants", "black", 3, 100.00);
+INSERT INTO breathe_and_be_you VALUES (4, "sandals", "tan", 28, 30.00);
+INSERT INTO breathe_and_be_you VALUES (5, "blouse", "light blue",40, 25.00);
+INSERT INTO breathe_and_be_you VALUES (6, "jeans", "white", 13, 55.00);
+INSERT INTO breathe_and_be_you VALUES (7, "t-shirt", "white", 70, 20.00);
+INSERT INTO breathe_and_be_you VALUES (8, "pants", "brown", 70, 30.00);
+INSERT INTO breathe_and_be_you VALUES (9, "t-shirt", "yellow", 10, 15.00);
+INSERT INTO breathe_and_be_you VALUES (10, "heels", "hot pink", 30, 50.00);
+INSERT INTO breathe_and_be_you VALUES (11, "blouse", "green", 3, 15.00);
+INSERT INTO breathe_and_be_you VALUES (12, "jeans", "light blue", 38, 70.00);
+INSERT INTO breathe_and_be_you VALUES (13, "t-shirt", "purple", 23, 15.00);
+INSERT INTO breathe_and_be_you VALUES (14, "sandals", "white", 40, 30.00);
+INSERT INTO breathe_and_be_you VALUES (15, "heels", "black", 10, 60.00);
+
+SELECT * FROM breathe_and_be_you ORDER BY price;
+SELECT item, SUM(stock) FROM breathe_and_be_you GROUP BY item;
+
+First I created a store database, then displayed the database ordered by price and then by number of each item in stock
